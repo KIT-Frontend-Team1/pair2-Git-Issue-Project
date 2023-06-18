@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom'
 
-const Pagination = ({ pages }) => {
+const Pagination = () => {
 	const pageNumbers = Array.from({ length: 10 }, (_, i) => i + 1) // Example: for pages=5, [1, 2, 3, 4, 5]
 	const navigate = useNavigate()
 	const { page: currentPage = '1' } = useParams()

@@ -33,7 +33,7 @@ const MainPage = () => {
 	const handleSortChange = event => {
 		const newSort = event.target.value
 		if (page === undefined) {
-			return (page = 1)
+			page = 1
 		}
 		navigate(`/page/${page}?sort=${newSort}&limit=${limit}`)
 	}
